@@ -1,0 +1,12 @@
+node {
+   stage('Stage1') {
+       echo 'This is Stage 1'
+   }
+   stage('Stage2') {
+       input("Please choose to proceed.")
+       echo 'This is Stage 2'
+   }
+   stage('Stage3') {
+       echo 'this is Stage 3'
+   }
+}
